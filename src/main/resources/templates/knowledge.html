@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dev list</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div th:each="member : ${knowledgeList}">
+    <img th:src="${member.image}" width="100px"/>
+    <div th:text="${member.name}"></div>
+    Skills:
+    <ul th:each="skill : ${member.skills}">
+        <li th:text="${skill.key + ' : ' + skill.value}"></li>
+    </ul>
+</div>
+
+</body>
+</html>

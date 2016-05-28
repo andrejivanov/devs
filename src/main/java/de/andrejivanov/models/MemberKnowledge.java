@@ -3,27 +3,37 @@ package de.andrejivanov.models;
 import java.util.Map;
 
 public class MemberKnowledge {
-    private Member member;
-    private Map<String, Integer> countProjectsPerLanguage;
+    private String name;
+    private String image;
+    private Map<String, Long> skills;
 
-    public MemberKnowledge(Member member, Map<String, Integer> countProjectsPerLanguage) {
-        this.member = member;
-        this.countProjectsPerLanguage = countProjectsPerLanguage;
+    public MemberKnowledge(String name, String image, Map<String, Long> skills) {
+        this.name = name;
+        this.image = image;
+        this.skills = skills;
     }
 
-    public Member getMember() {
-        return member;
+    public String getName() {
+        return name;
     }
 
-    public void setMember(Member member) {
-        this.member = member;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Map<String, Integer> getCountProjectsPerLanguage() {
-        return countProjectsPerLanguage;
+    public String getImage() {
+        return image;
     }
 
-    public void setCountProjectsPerLanguage(Map<String, Integer> countProjectsPerLanguage) {
-        this.countProjectsPerLanguage = countProjectsPerLanguage;
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public Map<String, Long> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(Map<String, Long> skills) {
+        this.skills = skills;
     }
 }
