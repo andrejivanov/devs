@@ -4,7 +4,6 @@ public class Member {
     private String login;
     private String avatar_url;
     private String url;
-    private String repos_url;
 
     public String getLogin() {
         return login;
@@ -30,11 +29,4 @@ public class Member {
         this.url = url;
     }
 
-    public String getRepos_url() {
-        return repos_url;
-    }
-
-    public void setRepos_url(String repos_url) {
-        this.repos_url = repos_url;
-    }
 }
